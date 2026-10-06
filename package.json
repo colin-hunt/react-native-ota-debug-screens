@@ -1,0 +1,61 @@
+{
+  "name": "react-native-ota-debug-screens",
+  "version": "0.1.0",
+  "description": "Debug screens for Expo apps that use expo-updates: inspect the running bundle, check and load updates, and switch between the update channels you allow. Requires Expo SDK 56+; does not work without Expo.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colin-hunt/react-native-ota-debug-screens.git"
+  },
+  "homepage": "https://github.com/colin-hunt/react-native-ota-debug-screens#readme",
+  "bugs": {
+    "url": "https://github.com/colin-hunt/react-native-ota-debug-screens/issues"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "react-native": "build/index.js",
+  "files": [
+    "build",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf build",
+    "prepack": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "expo",
+    "expo-updates",
+    "eas-update",
+    "ota",
+    "update-channel",
+    "debug",
+    "@expo/ui"
+  ],
+  "author": "Colin Hunt",
+  "license": "MIT",
+  "peerDependencies": {
+    "@expo/material-symbols": ">=0.1.0",
+    "@expo/ui": ">=56.0.16",
+    "expo": ">=56.0.0",
+    "expo-clipboard": ">=56.0.0",
+    "expo-constants": ">=56.0.0",
+    "expo-updates": ">=56.0.0",
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@expo/material-symbols": "^0.1.1",
+    "@expo/ui": "~58.0.4",
+    "@types/react": "~19.3.0",
+    "expo": "^58.0.0-preview.4",
+    "expo-clipboard": "~58.0.1",
+    "expo-constants": "~58.0.4",
+    "expo-updates": "~58.0.6",
+    "react": "19.3.0",
+    "react-native": "0.88.0-rc.1",
+    "typescript": "~6.0.3"
+  }
+}
